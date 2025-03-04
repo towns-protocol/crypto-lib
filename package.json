@@ -1,0 +1,8 @@
+{
+  "name": "crypto-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:towns-protocol/crypto-lib.git",
+  "author": "g <5714678+giuseppecrj@users.noreply.github.com>",
+  "license": "MIT"
+}
