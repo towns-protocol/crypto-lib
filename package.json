@@ -11,6 +11,6 @@
   "author": "g <5714678+giuseppecrj@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "forge-std": "github:foundry-rs/forge-std#v1.9.6"
+    "forge-std": "github:foundry-rs/forge-std#v1.9.5"
   }
 }
