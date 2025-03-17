@@ -1,15 +1,17 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.29;
+
 /********************************************************************************************/
 /*
-/*     ___                _   _       ___               _         _    _ _    
-/*    / __|_ __  ___  ___| |_| |_    / __|_ _ _  _ _ __| |_ ___  | |  (_) |__ 
+/*     ___                _   _       ___               _         _    _ _
+/*    / __|_ __  ___  ___| |_| |_    / __|_ _ _  _ _ __| |_ ___  | |  (_) |__
 /*    \__ \ '  \/ _ \/ _ \  _| ' \  | (__| '_| || | '_ \  _/ _ \ | |__| | '_ \
 /*   |___/_|_|_\___/\___/\__|_||_|  \___|_|  \_, | .__/\__\___/ |____|_|_.__/
-/*                                         |__/|_|           
-/*              
+/*                                         |__/|_|
+/*
 /* Copyright (C) 2023 - Renaud Dubois - This file is part of SCL (Smooth CryptoLib) project
-/* License: This software is licensed under MIT License                                        
+/* License: This software is licensed under MIT License
 /********************************************************************************************/
-
 
 // prime field modulus of the secp256r1 curve
 uint256 constant p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F;
@@ -25,7 +27,7 @@ uint256 constant gy = 0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08F
 // the order of the curve, i.e., the number of points on the curve
 uint256 constant n = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141;
 
-uint256 constant pMINUS_1=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2E;
+uint256 constant pMINUS_1 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2E;
 
- //P+1 div 4, used for sqrtmod computation
- uint256 constant pp1div4=28948022309329048855892746252171976963317496166410141009864396001977208667916;
+//P+1 div 4, used for sqrtmod computation
+uint256 constant pp1div4 = 28948022309329048855892746252171976963317496166410141009864396001977208667916;
