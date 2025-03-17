@@ -12,8 +12,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.19 <0.9.0;
 
-import "src/elliptic/SCL_mulmuladdX_fullgen_b4.sol";
-import {ModInv} from "src/modular/SCL_modular.sol";
+import "../elliptic/SCL_mulmuladdX_fullgen_b4.sol";
+import {ModInv} from "../modular/SCL_modular.sol";
 //import point on curve checking
 import {ec_isOnCurve} from "../elliptic/SCL_ecOncurve.sol";
 

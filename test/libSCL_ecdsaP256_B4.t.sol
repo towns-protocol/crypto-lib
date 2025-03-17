@@ -15,13 +15,13 @@ pragma solidity >=0.8.19 <0.9.0;
 import "forge-std/Test.sol";
 
 //import Shamir's trick 4 dimensional
-import "src/elliptic/SCL_mulmuladdX_fullgen_b4.sol";
+import "../src/elliptic/SCL_mulmuladdX_fullgen_b4.sol";
 
-import "src/lib/libSCL_ecdsab4.sol";
+import "../src/lib/libSCL_ecdsab4.sol";
 
-import "src/fields/SCL_secp256r1.sol";
+import "../src/fields/SCL_secp256r1.sol";
 //import point on curve checking
-import {ec_isOnCurve} from "src/elliptic/SCL_ecOncurve.sol";
+import {ec_isOnCurve} from "../src/elliptic/SCL_ecOncurve.sol";
 
 uint constant NBTEST = 1000;
 

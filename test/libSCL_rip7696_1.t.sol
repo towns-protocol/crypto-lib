@@ -15,8 +15,8 @@ import "forge-std/Test.sol";
 import {stdJson} from "forge-std/StdJson.sol";
 /* import rip7212 */
 
-import {ModInv} from "src/modular/SCL_modular.sol";
-import "src/lib/libSCL_RIP7696.sol";
+import {ModInv} from "../src/modular/SCL_modular.sol";
+import "../src/lib/libSCL_RIP7696.sol";
 
 uint constant _NBTEST = 1000;
 // prime field modulus of the ed25519 curve

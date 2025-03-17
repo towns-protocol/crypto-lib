@@ -4,7 +4,8 @@
   "main": "index.js",
   "files": [
     "src/**/*.sol",
-    "external/**/*.sol"
+    "external/**/*.sol",
+    "remappings.txt"
   ],
   "repository": "git@github.com:towns-protocol/crypto-lib.git",
   "author": "g <5714678+giuseppecrj@users.noreply.github.com>",

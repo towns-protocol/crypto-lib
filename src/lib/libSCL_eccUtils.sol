@@ -13,7 +13,7 @@
 pragma solidity >=0.8.19 <0.9.0;
 
 import {ec_isOnCurve} from "../elliptic/SCL_ecOncurve.sol";
-import {ModInv} from "src/modular/SCL_modular.sol";
+import {ModInv} from "../modular/SCL_modular.sol";
 
 library SCL_ECCUTILS {
     function ecNormalize(

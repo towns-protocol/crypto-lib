@@ -15,7 +15,7 @@ pragma solidity >=0.8.19 <0.9.0;
 import "forge-std/Test.sol";
 import {stdJson} from "forge-std/StdJson.sol";
 
-import {tagged_hashBTC, Schnorr_verify, ecDecompress_BTC, n} from "src/lib/libSCL_BIP327.sol";
+import {tagged_hashBTC, Schnorr_verify, ecDecompress_BTC, n} from "../src/lib/libSCL_BIP327.sol";
 
 contract Test_bip327 is Test {
     function test_BIP327_taggedhash() public pure {

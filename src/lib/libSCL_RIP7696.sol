@@ -13,13 +13,13 @@
 pragma solidity >=0.8.19 <0.9.0;
 
 //import point on curve checking
-import {ec_isOnCurve} from "src/elliptic/SCL_ecOncurve.sol";
+import {ec_isOnCurve} from "../elliptic/SCL_ecOncurve.sol";
 
 //import point double multiplication and accumulation (RIP7696), first operator
-import "src/elliptic/SCL_mulmuladdX_fullgenW.sol";
+import "../elliptic/SCL_mulmuladdX_fullgenW.sol";
 
 //import Shamir's trick 4 dimensional, second operator
-import "src/elliptic/SCL_mulmuladdX_fullgen_b4.sol";
+import "../elliptic/SCL_mulmuladdX_fullgen_b4.sol";
 
 library SCL_RIP7696 {
     /* first operator of precompile 7696 */

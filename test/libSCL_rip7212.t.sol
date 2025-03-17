@@ -15,7 +15,7 @@ import "forge-std/Test.sol";
 import {stdJson} from "forge-std/StdJson.sol";
 /* import rip7212 */
 
-import "src/lib/libSCL_RIP7212.sol";
+import "../src/lib/libSCL_RIP7212.sol";
 
 uint constant NBTEST = 1000;
 

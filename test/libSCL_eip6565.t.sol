@@ -18,13 +18,13 @@ pragma solidity >=0.8.19 <0.9.0;
 
 import "forge-std/Test.sol";
 
-import {ModInv} from "src/modular/SCL_modular.sol";
-import "src/elliptic/SCL_mulmuladdX_fullgenW.sol";
+import {ModInv} from "../src/modular/SCL_modular.sol";
+import "../src/elliptic/SCL_mulmuladdX_fullgenW.sol";
 
-import "src/lib/libSCL_EIP6565.sol";
+import "../src/lib/libSCL_EIP6565.sol";
 
-import "src/lib/libSCL_eddsaUtils.sol";
-import "src/hash/SCL_sha512.sol";
+import "../src/lib/libSCL_eddsaUtils.sol";
+import "../src/hash/SCL_sha512.sol";
 
 uint constant _NBTEST = 100;
 

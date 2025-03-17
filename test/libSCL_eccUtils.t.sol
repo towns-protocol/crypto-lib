@@ -16,11 +16,11 @@ import "forge-std/Test.sol";
 
 import "forge-std/Test.sol";
 
-import "src/lib/libSCL_ecdsab4.sol";
+import "../src/lib/libSCL_ecdsab4.sol";
 
-import "src/fields/SCL_secp256r1.sol";
+import "../src/fields/SCL_secp256r1.sol";
 //import point on curve checking
-import "src/lib/libSCL_eccUtils.sol";
+import "../src/lib/libSCL_eccUtils.sol";
 
 contract Test_eccutils is Test {
     //test all wycheproof keys are on curve and not pathologic
@@ -45,10 +45,10 @@ contract Test_eccutils is Test {
             uint256 qx = uint256(stdJson.readBytes32(vector, ".x"));
             uint256 qy = uint256(stdJson.readBytes32(vector, ".y"));
             //  uint256 r = uint256(stdJson.readBytes32(vector,".r"));
-            uint256 s = uint256(stdJson.readBytes32(vector, ".s"));
-            bytes32 hash = stdJson.readBytes32(vector, ".hash");
+            // uint256 s = uint256(stdJson.readBytes32(vector, ".s"));
+            // bytes32 hash = stdJson.readBytes32(vector, ".hash");
             bool expected = stdJson.readBool(vector, ".valid");
-            string memory comment = stdJson.readString(vector, ".comment");
+            // string memory comment = stdJson.readString(vector, ".comment");
 
             if (expected) {
                 (status, Qpa) = SCL_ECCUTILS.SetKey(p, a, b, gx, gy, qx, qy);

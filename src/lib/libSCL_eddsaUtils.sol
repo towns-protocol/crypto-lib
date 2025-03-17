@@ -17,7 +17,7 @@
 
 pragma solidity >=0.8.19 <0.9.0;
 
-import "src/lib/libSCL_EIP6565.sol";
+import "../lib/libSCL_EIP6565.sol";
 
 library SCL_EIP6565_UTILS {
     //to be called offchain, compute both signing secret and extended public key
