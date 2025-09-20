@@ -18,3 +18,7 @@ docs/
 /doc/.DS_Store
 /src/.DS_Store
 /src/elliptic/.DS_Store
+
+node_modules
+.idea
+.yarn
